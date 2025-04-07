@@ -3,9 +3,208 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dental care</title>
+        <title>Dental Care</title>
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- Font embed -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        Dental care landing page
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <!-- Header-top -->
+                <div class="header-top">
+                    <!-- Logo -->
+                    <a href="/">
+                        <div class="logo">
+                            <span class="logo__circle"></span>
+                            <div class="logo__text">
+                                <span class="logo__brand">shine</span>
+                                <span class="logo_brand--small">smile</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <a href="#!">
+                                <li class="navbar__item">Home</li>
+                            </a>
+
+                            <a href="#!">
+                                <li class="navbar__item">Services</li>
+                            </a>
+
+                            <a href="#!">
+                                <li class="navbar__item">About</li>
+                            </a>
+
+                            <a href="#!">
+                                <li class="navbar__item">Doctors</li>
+                            </a>
+                        </ul>
+                    </nav>
+
+                    <div class="action">
+                        <a href="#!" class="action__log-in"> Log In </a>
+
+                        <a href="#!" class="btn action__btn">Sign Up</a>
+                    </div>
+                </div>
+
+                <!-- Hero -->
+                <section class="hero">
+                    <!-- Content -->
+                    <section class="hero__content">
+                        <h1 class="hero__heading">
+                            Exceptional dental care for all ages.
+                        </h1>
+
+                        <p class="hero__desc">
+                            Exceptional dental care for all ages. Your great
+                            smile begins with a great dentist.
+                        </p>
+
+                        <div class="hero__cta">
+                            <a href="#!" class="btn">Book Online</a>
+                            <span class="hero__phone">
+                                or call (123) 456-7890
+                            </span>
+                        </div>
+                    </section>
+
+                    <!-- Media -->
+                    <div class="hero__media">
+                        <figure class="hero__images">
+                            <img
+                                src="./assets/img/hero-img.jpg"
+                                alt="Exceptional dental care for all ages."
+                                class="hero__img"
+                            />
+                            <img
+                                src="./assets/img/hero-img-small.jpg"
+                                alt="Exceptional dental care for all ages."
+                                class="hero__img"
+                            />
+                        </figure>
+                    </div>
+                </section>
+            </div>
+        </header>
+
+        <main>
+            <!-- Services -->
+            <section class="services">
+                <div class="container">
+                    <h2 class="services__heading section-heading">
+                        Our services
+                    </h2>
+
+                    <p class="services__desc section-desc">
+                        Exceptional dental care for all ages. Your great smile
+                        begins with a great dentist.
+                    </p>
+
+                    <section class="services__row">
+                        <figure class="services__images">
+                            <img
+                                src="./assets/img/service-img.jpg"
+                                alt="Our services"
+                                class="services__img"
+                            />
+                        </figure>
+
+                        <div class="services__column">
+                            <div class="services__list">
+                                <!-- Item 1 -->
+                                <section class="services-item">
+                                    <div class="services-item__icon">
+                                        <img
+                                            src="./assets/icons/tooth.svg"
+                                            alt=""
+                                            class="services-item__img"
+                                        />
+                                    </div>
+
+                                    <div class="services-item__body">
+                                        <h3 class="services-item__heading">
+                                            Oral Surgery
+                                        </h3>
+                                        <p class="services-item__desc">
+                                            Everything you expect and then some.
+                                            Cleanings, fillings, and x-rays.
+                                        </p>
+                                    </div>
+                                </section>
+
+                                <!-- Item 2 -->
+                                <section class="services-item">
+                                    <div class="services-item__icon">
+                                        <img
+                                            src="./assets/icons/tooth.svg"
+                                            alt=""
+                                            class="services-item__img"
+                                        />
+                                    </div>
+
+                                    <div class="services-item__body">
+                                        <h3 class="services-item__heading">
+                                            Wisdom Teeth Removal
+                                        </h3>
+                                        <p class="services-item__desc">
+                                            Everything you expect and then some.
+                                            Cleanings, fillings, and x-rays.
+                                        </p>
+                                    </div>
+                                </section>
+
+                                <!-- Item 3 -->
+                                <section class="services-item">
+                                    <div class="services-item__icon">
+                                        <img
+                                            src="./assets/icons/tooth.svg"
+                                            alt=""
+                                            class="services-item__img"
+                                        />
+                                    </div>
+
+                                    <div class="services-item__body">
+                                        <h3 class="services-item__heading">
+                                            Preventative Dentistry
+                                        </h3>
+                                        <p class="services-item__desc">
+                                            Everything you expect and then some.
+                                            Cleanings, fillings, and x-rays.
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div class="services__cta">
+                                <a href="#!" class="btn">All Services</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
