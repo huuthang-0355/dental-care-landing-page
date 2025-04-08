@@ -30,6 +30,7 @@ a {
 }
 
 .btn {
+    display: inline-block;
     padding: 15px 0;
     min-width: 205px;
     border-radius: 30px;
@@ -47,7 +48,6 @@ a {
 
 .section-heading {
     color: var(--primary-color);
-    text-align: center;
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.2; /* 120% */
@@ -56,7 +56,6 @@ a {
 
 .section-desc {
     color: #575f66;
-    text-align: center;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.66667; /* 166.667% */
@@ -326,6 +325,11 @@ a {
     margin-left: 19px;
 }
 
+.services__heading,
+.services__desc {
+    text-align: center;
+}
+
 .services-item__heading {
     color: #10375c;
     font-size: 1.8rem;
@@ -343,4 +347,240 @@ a {
 
 .services__cta {
     margin-top: 55px;
+}
+
+/* ============= Work ============ */
+.work {
+    margin-top: 170px;
+    padding: 100px 135px;
+    background: #f6fbff;
+}
+
+.work__desc {
+    margin-top: 18px;
+    width: 40%;
+}
+
+.work__list {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.work-item {
+    padding: 43px 42px;
+    border-radius: 4px;
+    border: 16px solid #eaf6ff;
+    background-color: #fff;
+    transition: transform 0.15s, border-color 0.15s;
+}
+
+.work-item:hover {
+    cursor: pointer;
+    border-color: #2e80ce;
+    transform: translateY(-16px);
+}
+
+.work-item__heading {
+    margin-top: 18px;
+    color: var(--primary-color);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38462; /* 138.462% */
+}
+
+.work-item__desc {
+    margin-top: 28px;
+    margin-bottom: 18px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.work-item__link {
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+    transition: color 0.15s;
+}
+
+.work-item__link:hover {
+    color: #2e80ce;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* ============ Features ================ */
+.feature {
+    margin-top: 170px;
+}
+
+.feature__body {
+    display: flex;
+}
+
+.feature__media {
+    position: relative;
+    width: 49%;
+    height: 491px;
+}
+
+.feature__content {
+    flex: 1;
+}
+
+.feature__images {
+    width: 512px;
+    height: 370px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.feature__images--small {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 332px;
+    height: 370px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.feature__content {
+    margin-left: 130px;
+    padding-top: 82px;
+}
+
+.feature__desc {
+    margin-top: 18px;
+}
+
+.feature__link {
+    margin-top: 38px;
+}
+
+/* ========== Member ============ */
+.member {
+    margin-top: 170px;
+}
+
+.member__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.member__btn {
+    margin-top: 38px;
+}
+
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.member-item:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.member-item__avatar {
+    display: flex;
+    align-items: flex-end;
+    width: 270px;
+    height: 318px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #eaf6ff;
+}
+
+.member-item__thumb {
+    width: 270px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.member-item__name {
+    margin-top: 12px;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.75; /* 175% */
+}
+
+.member-item__title {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85714; /* 185.714% */
+}
+
+.member__next {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member__next:hover {
+    cursor: pointer;
+}
+
+/* ========= Install ============= */
+.install {
+    margin-top: 265px;
+}
+
+.install__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 76px 70px 75px;
+    border-radius: 4px;
+    background: #2e80ce;
+}
+
+.install__img {
+    width: 284px;
+    height: 522px;
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+}
+
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+
+.install__heading {
+    max-width: 489px;
+}
+
+.install__desc {
+    margin-top: 18px;
+    max-width: 586px;
+}
+
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
+}
+
+.install__app-store__logo,
+.install__google-play__logo {
+    cursor: pointer;
 }
